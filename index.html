@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Task 25 Todo-list MVC</title>
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="./script/todo-api.js"></script>
+    <script defer src="./script/collection/collection.js"></script>
+    <script defer src="./script/view/todo-list-view.js"></script>   
+    <script defer src="./script/view/create-todo-view.js"></script>    
+    <script defer src="./script/controller/controller.js"></script>
+    <script defer src="./script/app.js"></script>
+  </head>
+  <body class="body">
+    <form id="input-wrapper">
+        <input 
+          class="todo-input"
+          type="text"
+          placeholder="Input something to do"
+          >
+        </input>
+        <div class="todo-input__error-window">
+          <div class="todo-input__error-window_art"></div>
+          Please write something!
+        </div>
+        <button 
+          class="todo-button"
+        >Click to save list item
+      </button>
+    </form>
+    <h5 class="todo-list__heading">To do list</h5>
+    <div id="root"></div>
+  </body>
+</html>
